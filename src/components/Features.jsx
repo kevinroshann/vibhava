@@ -51,12 +51,16 @@ export const Features = () => {
 
   return (
     <section className="bg-white pb-52">
+      
       <div className="container mx-auto px-3 md:px-10">
-        <div className="px-5 py-32">
-          <p className="font-circular-web text-6xl text-black">Events</p>
-          <p className="max-w-md font-circular-web text-lg text-black">
+      <div className="px-5 pt-32 pb-10">
+        <p className="font-circular-web font-bold text-7xl sm:text-8xl md:text-9xl lg:text-10xl xl:text-11xl text-black tracking-tight">
+  EVENTS
+</p>
+
+          {/* <p className="max-w-md font-circular-web text-lg text-black">
             Brief description of events happening
-          </p>
+          </p> */}
         </div>
 
         <div className="grid h-auto w-full grid-cols-2 grid-rows-3 gap-7">
