@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import { TiLocationArrow } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
 export const Features = () => {
@@ -16,10 +15,6 @@ export const Features = () => {
       y: event.clientY - rect.top,
     });
   };
-
-  const handleMouseEnter = () => setHoverOpacity(1);
-  const handleMouseLeave = () => setHoverOpacity(0);
-
   // Array of card data
   const cards = [
     {
@@ -66,7 +61,7 @@ export const Features = () => {
 
         <div className="grid h-auto w-full grid-cols-2 grid-rows-3 gap-7">
           {cards.map((card, index) => (
-            <div key={index} className="card-container" onMouseMove={handleMouseMove}>
+            <div key={index} className="card-container" >
               <Link to={card.link}>
                 <div className="card bg-[#46beb9] p-5">
                   <h1 className="card-title">{card.title}</h1>

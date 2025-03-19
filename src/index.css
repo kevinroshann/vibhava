@@ -275,7 +275,7 @@ body {
 .card-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .card {
@@ -283,7 +283,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-width: 250px; /* Minimum width */
-  min-height: 300px; /* Minimum height */
+  min-height: 250px; /* Minimum height */
   padding: 20px;
   border-radius: 12px; /* Curved edges */
   color: #fff;
@@ -292,23 +292,25 @@ body {
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   font-weight: bold;
+  color: white;
 }
 
 .card-description {
   font-size: 1rem;
+  color: black;
 }
 
 .card-container .card-description {
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
 }
 
 @media (max-width: 768px) {
   .card-container {
     width: 100%;
-    height: auto;
+    min-height: 150px; 
   }
 
   .grid {
