@@ -8,7 +8,7 @@ const About = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setKey((prevKey) => prevKey + 1);
-    }, 10000); // Restart every 10 seconds
+    }, 30000); // Restart every 10 seconds
 
     return () => clearInterval(interval);
   }, []);
