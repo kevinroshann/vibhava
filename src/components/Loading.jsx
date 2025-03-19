@@ -4,7 +4,7 @@ const LoadingScreen = ({ setLoading }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false); // Hide loading screen after a few seconds
-    }, 3000); // Adjust timing as needed
+    }, 300); // Adjust timing as needed
   }, []);
 
   return (

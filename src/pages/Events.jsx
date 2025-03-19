@@ -143,11 +143,11 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 };
 
 const Events = () => (
-  <section className="bg-black pb-52">
+  <section className="bg-white pb-52">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <p className="font-circular-web text-6xl text-blue-50">Events</p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
+        <p className="font-circular-web text-6xl text-black">Events</p>
+        <p className="max-w-md font-circular-web text-lg text-black">
          These are the evenets happening
         </p>
       </div>
@@ -159,7 +159,7 @@ const Events = () => (
             className="bento-tilt_1 md:col-span-1 md:row-span-1"
           >
             <Link to={event.link}>
-              <div className="flex size-full flex-col justify-between bg-violet-300 p-0">
+              <div className="flex size-full flex-col justify-between bg-[#46beb9] p-0">
                 <BentoCard
                   src={event.src} // Pass the image source here
                   title={event.title}

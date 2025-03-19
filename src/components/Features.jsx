@@ -65,7 +65,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
         autoPlay
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
-      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
+      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-black">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
           {description && (
@@ -99,13 +99,13 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 };
 
 const Features = () => (
-  <section className="bg-black pb-52">
+  <section className="bg-white pb-52">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <p className="font-circular-web text-6xl text-blue-50">
+        <p className="font-circular-web text-6xl text-black">
           Events
         </p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
+        <p className="max-w-md font-circular-web text-lg text-black ">
           brief description of events happeining
         </p>
       </div>
@@ -113,7 +113,7 @@ const Features = () => (
       <div className="grid h-auto w-full grid-cols-2 grid-rows-3 gap-7">
       <BentoTilt className="bento-tilt_1 md:col-span-1 md:row-span-1">
         <Link to="/Workshop">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+          <div className="flex size-full flex-col justify-between bg-[#46beb9] p-5">
             <BentoCard
               // src="videos/feature-6.mp4"
               title={<> WorkShop and Sessions</>}
@@ -123,7 +123,7 @@ const Features = () => (
         {/* Card 1 - EVENTS */}
         <BentoTilt className="bento-tilt_1 md:col-span-1 md:row-span-1">
         <Link to="/Events">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+          <div className="flex size-full flex-col justify-between bg-[#46beb9] p-5">
             <BentoCard
               // src="videos/feature-6.mp4"
               title={<> Alumini Networking</>}
@@ -133,7 +133,7 @@ const Features = () => (
 
         {/* Card 2 - SCHEDULE */}
         <BentoTilt className="bento-tilt_1 md:col-span-1 md:row-span-1">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+          <div className="flex size-full flex-col justify-between bg-[#46beb9] p-5">
             <BentoCard
               // src="videos/feature-6.mp4"
               title={<> Panel Discussions</>}
@@ -143,7 +143,7 @@ const Features = () => (
 
         {/* Card 3 - AZUL */}
         <BentoTilt className="bento-tilt_1 md:col-span-1 md:row-span-1">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+          <div className="flex size-full flex-col justify-between bg-[#46beb9] p-5">
             <BentoCard
               // src="videos/feature-6.mp4"
               title={<> Startup and Industry engagement</>}
@@ -153,7 +153,7 @@ const Features = () => (
 
         {/* Card 4 - ANOTHER CARD (Example) */}
         <BentoTilt className="bento-tilt_1 md:col-span-1 md:row-span-1">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+          <div className="flex size-full flex-col justify-between bg-[#46beb9] p-5">
             <BentoCard
               // src="videos/feature-6.mp4"
               title={<> Project EXPO</>}
@@ -166,7 +166,7 @@ const Features = () => (
 
         
         <BentoTilt className="bento-tilt_1 md:col-span-1 md:row-span-1">
-          <div className="flex size-full flex-col justify-between bg-violet-300  p-5">
+          <div className="flex size-full flex-col justify-between bg-[#46beb9]  p-5">
             <BentoCard
               // src="videos/feature-6.mp4"
               title={<>Much more</>}

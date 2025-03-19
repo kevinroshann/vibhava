@@ -6,7 +6,7 @@ import { FaGithub, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 // import { FaDiscord, FaTwitter, FaYoutube, FaMedium } from "react-icons/fa";
 export const RevealBento = () => {
     return (
-        <div className="min-h-50vh bg-black px-4 py-12 text-zinc-50">
+        <div className="min-h-50vh bg-white px-4 py-12 text-zinc-50">
             {/* <Logo /> */}
             <motion.div
                 initial="initial"
@@ -49,7 +49,7 @@ const Block = ({ className, ...rest }) => {
                 damping: 50,
             }}
             className={twMerge(
-                "col-span-4 rounded-lg border border-zinc-700 bg-zinc-800 p-6",
+                "col-span-4 rounded-lg border  bg-[#46beb9] p-6",
                 className
             )}
             {...rest}
@@ -67,7 +67,7 @@ const HeaderBlock = () => (
         <h1 className="mb-12 text-4xl font-medium leading-tight">
             For any Queries
             <br />
-            <span className="text-zinc-400">
+            <span className="text-black">
                 contact 234534332
             </span>
         </h1>
@@ -146,7 +146,7 @@ const SocialsBlock = () => (
 const LocationBlock = () => (
     <Block className="col-span-12  flex flex-col items-center gap-4 md:col-span-9">
         <FiMapPin className="text-3xl" />
-        <p className="text-center text-lg text-zinc-400">CUSAT</p>
+        <p className="text-center text-lg text-black">CUSAT</p>
     </Block>
 );
 

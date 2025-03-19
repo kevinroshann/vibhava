@@ -14,7 +14,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-screen bg-black flex flex-col justify-center items-center text-green-400 font-mono text-lg p-6">
+    <div className="min-h-screen w-screen bg-white flex flex-col justify-center items-center text-green-400 font-mono text-lg p-6">
       <div className="w-full max-w-4xl bg-gray-900 p-4 rounded-lg border border-green-500 shadow-lg">
         
         {/* Tmux Header */}
