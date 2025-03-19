@@ -11,6 +11,7 @@ import Footer from "../components/Footer";
 import { RevealBento } from "../components/con";
 import ShiftingCountdown from "../components/Countdown";
 import AboutSection from "../components/About2";
+import Marquee from "../components/Marquee";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,7 +28,9 @@ function App() {
           
           <ShiftingCountdown/>
           <AboutSection/>
+         
           <Features />
+          <Marquee/>
           <RevealBento />
           <Footer />
         </main>
