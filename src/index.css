@@ -272,3 +272,46 @@ body {
     opacity: 0.8;
   }
 }
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 250px; /* Minimum width */
+  min-height: 300px; /* Minimum height */
+  padding: 20px;
+  border-radius: 12px; /* Curved edges */
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 1rem;
+}
+
+.card-container .card-description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Stacks cards on mobile */
+  }
+}

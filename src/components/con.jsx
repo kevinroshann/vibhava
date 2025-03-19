@@ -49,7 +49,7 @@ const Block = ({ className, ...rest }) => {
                 damping: 50,
             }}
             className={twMerge(
-                "col-span-4 rounded-lg border  bg-[#46beb9] p-6",
+                "col-span-4 rounded-lg border p-6",
                 className
             )}
             {...rest}
@@ -64,7 +64,7 @@ const HeaderBlock = () => (
             alt="avatar"
             className="mb-4 size-14 rounded-full"
         /> */}
-        <h1 className="mb-12 text-4xl font-medium leading-tight">
+        <h1 className="mb-12 text-4xl font-medium text-black leading-tight">
             For any Queries
             <br />
             <span className="text-black">
@@ -87,11 +87,11 @@ const SocialsBlock = () => (
                 rotate: "2.5deg",
                 scale: 1.1,
             }}
-            className="col-span-6 bg-red-500 md:col-span-3"
+            className="col-span-6 bg-white md:col-span-3"
         >
             <a
                 href="#"
-                className="grid h-full place-content-center text-3xl text-white"
+                className="grid h-full place-content-center text-3xl text-black"
             >
                 <FaYoutube />
             </a>
@@ -115,7 +115,7 @@ const SocialsBlock = () => (
                 rotate: "-2.5deg",
                 scale: 1.1,
             }}
-            className="col-span-6 bg-zinc-50 md:col-span-3"
+            className="col-span-6 bg-white md:col-span-3"
         >
             <a
                 href="#"
@@ -145,14 +145,14 @@ const SocialsBlock = () => (
 
 const LocationBlock = () => (
     <Block className="col-span-12  flex flex-col items-center gap-4 md:col-span-9">
-        <FiMapPin className="text-3xl" />
+        <FiMapPin className="text-3xl text-black" />
         <p className="text-center text-lg text-black">CUSAT</p>
     </Block>
 );
 
 const EmailListBlock = () => (
     <Block className="col-span-12 md:col-span-9">
-        <p className="mb-3 text-lg">For any Queries</p>
+        <p className="mb-3 text-lg text-black">For any Queries</p>
         <form
             onSubmit={(e) => e.preventDefault()}
             className="flex items-center gap-2"
@@ -160,11 +160,11 @@ const EmailListBlock = () => (
             <input
                 type="text"
                 placeholder="enter message"
-                className="w-full rounded border border-zinc-700 bg-zinc-800 px-3 py-1.5 transition-colors focus:border-red-300 focus:outline-0"
+                className="w-full rounded border border-black bg-white px-3 py-1.5 transition-colors focus:border-black focus:outline-0"
             />
             <button
                 type="submit"
-                className="flex items-center gap-2 whitespace-nowrap rounded bg-zinc-50 px-3 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-300"
+                className="flex items-center gap-2 whitespace-nowrap rounded bg-[#46beb9] px-3 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-[#46beb9]"
             >
                 <FiMail /> sent
             </button>
