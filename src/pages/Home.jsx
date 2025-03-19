@@ -9,6 +9,7 @@ import Features from "../components/Features";
 // import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import { RevealBento } from "../components/con";
+import ShiftingCountdown from "../components/Countdown";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -21,7 +22,8 @@ function App() {
         <main className="relative min-h-screen w-screen overflow-x-hidden">
           <NavBar />
           <Hero />
-          <About />
+          {/* <About /> */}
+          <ShiftingCountdown/>
           <Features />
           <RevealBento />
           <Footer />
