@@ -78,7 +78,7 @@ const NavBar = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden text-black text-2xl"
             >
-              {isMenuOpen ? <FiX /> : <FiMenu />}
+              <FiMenu />
             </button>
 
             {/* Desktop Navigation */}
