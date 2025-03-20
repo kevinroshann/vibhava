@@ -29,7 +29,7 @@ export function AnimatedTestimonialsDemo() {
   return (
     <div className="flex flex-col items-center">
       <div className="px-5 pt-7 pb-7 text-center">
-        <p className="font-circular-web font-bold text-7xl sm:text-8xl md:text-9xl lg:text-10xl xl:text-11xl text-black tracking-tight">
+        <p className="text-7xl sm:text-8xl md:text-9xl lg:text-10xl xl:text-11xl text-black tracking-tight">
           Speakers
         </p>
       </div>

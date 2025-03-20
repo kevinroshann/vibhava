@@ -22,7 +22,7 @@ function App() {
       {loading ? (
         <LoadingScreen setLoading={setLoading} />
       ) : (
-        <main className="relative min-h-screen w-screen overflow-x-hidden">
+        <main className="relative min-h-screen w-screen ">
           <NavBar />
           <Routes>
           <Route path="/" element={<Home />} />
