@@ -14,7 +14,7 @@ export const RevealBento = () => {
                 transition={{
                     staggerChildren: 0.05,
                 }}
-                className="mx-auto grid max-w-6xl grid-flow-dense grid-cols-8 gap-4"
+                className="mx-auto grid grid-flow-dense grid-cols-8 gap-4"
             >
                 <HeaderBlock />
                 <SocialsBlock />
@@ -58,7 +58,7 @@ const Block = ({ className, ...rest }) => {
 };
 
 const HeaderBlock = () => (
-    <Block className="col-span-12 row-span-2 md:col-span-6">
+    <Block className="col-span-12 row-span-2 md:col-span-6 border-black">
         {/* <img
             src="hero-1.jpg"
             alt="avatar"
@@ -87,7 +87,7 @@ const SocialsBlock = () => (
                 rotate: "2.5deg",
                 scale: 1.1,
             }}
-            className="col-span-6 bg-white md:col-span-3"
+            className="col-span-6 bg-white md:col-span-3 border-black"
         >
             <a
                 href="#"
@@ -115,7 +115,7 @@ const SocialsBlock = () => (
                 rotate: "-2.5deg",
                 scale: 1.1,
             }}
-            className="col-span-6 bg-white md:col-span-3"
+            className="col-span-6 bg-white md:col-span-3 border-black"
         >
             <a
                 href="#"
@@ -144,14 +144,14 @@ const SocialsBlock = () => (
 
 
 const LocationBlock = () => (
-    <Block className="col-span-12  flex flex-col items-center gap-4 md:col-span-9">
+    <Block className="col-span-12  flex flex-col items-center gap-4 md:col-span-9 border-black">
         <FiMapPin className="text-3xl text-black" />
         <p className="text-center text-lg text-black">CUSAT</p>
     </Block>
 );
 
 const EmailListBlock = () => (
-    <Block className="col-span-12 md:col-span-9">
+    <Block className="col-span-12 md:col-span-9 border-black">
         <p className="mb-3 text-lg text-black">For any Queries</p>
         <form
             onSubmit={(e) => e.preventDefault()}

@@ -334,8 +334,8 @@ body {
 }
 
 .marquee {
-  margin-left: 10vw;
-  margin-right: 10vw;
+  /* margin-left: 10vw;
+  margin-right: 10vw; */
   max-width: 1800px;
   overflow: hidden;
   --speed: 25s;

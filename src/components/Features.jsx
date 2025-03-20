@@ -37,6 +37,16 @@ export const Features = () => {
       description: "Description",
       link: "#",
     },
+    {
+      title: "Project Expo",
+      description: "Description",
+      link: "#",
+    },
+    {
+      title: "Project Expo",
+      description: "Description",
+      link: "#",
+    },
     // {
     //   title: "Project EXPO",
     //   description: "Description",
@@ -51,9 +61,9 @@ export const Features = () => {
 
   return (
     <section className="bg-white pb-10">
-  <div className="container mx-auto px-3 md:px-10">
-    <div className="px-5 pt-7 pb-7">
-      <p className="font-circular-web font-bold text-7xl sm:text-8xl md:text-9xl lg:text-10xl xl:text-11xl text-black tracking-tight">EVENTS</p>
+  <div className="container mx-auto md:px-10">
+    <div className="pt-7 pb-7">
+      <p className="font-circular-web font-bold text-7xl sm:text-8xl md:text-9xl lg:text-10xl xl:text-11xl text-black tracking-tight">Events</p>
     </div>
     <div className="grid h-auto w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
   {cards.map((card, index) => (
