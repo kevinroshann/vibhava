@@ -50,35 +50,28 @@ export const Workshops = () => {
   ];
 
   return (
-    <section className="bg-white pb-52">
-      
-      <div className="container mx-auto px-3 md:px-10">
-        <div className="px-5 pt-32 pb-10">
-        <p className="font-circular-web font-bold text-7xl sm:text-8xl md:text-9xl lg:text-10xl xl:text-11xl text-black tracking-tight">
-  Workshops
-</p>
-
-          {/* <p className="max-w-md font-circular-web text-lg text-black">
-            Brief description of events happening
-          </p> */}
-        </div>
-
-        <div className="grid h-auto w-full grid-cols-2 grid-rows-3 gap-7">
-          {cards.map((card, index) => (
-            <div key={index} className="card-container" >
-              <Link to={card.link}>
-                <div className="card bg-[#46beb9] p-5">
-                  <h1 className="card-title">{card.title}</h1>
-                  {card.description && (
-                    <p className="card-description">{card.description}</p>
-                  )}
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
+    <section className="bg-white pb-10">
+    <div className="container mx-auto px-3 md:px-10">
+      <div className="px-5 pt-7 pb-7">
+        <p className="font-circular-web font-bold text-7xl sm:text-8xl md:text-9xl lg:text-10xl xl:text-11xl text-black tracking-tight">Schedule</p>
       </div>
-    </section>
+      <div className="grid h-auto w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+    {cards.map((card, index) => (
+      <div key={index} className="card-container">
+        <Link to={card.link}>
+          <div className="card bg-[#46beb9] p-5 md:p-6 lg:p-8 min-h-[200px] sm:min-h-[250px]">
+            <h1 className="card-title">{card.title}</h1>
+            {card.description && (
+              <p className="card-description">{card.description}</p>
+            )}
+          </div>
+        </Link>
+      </div>
+    ))}
+  </div>
+  
+    </div>
+  </section>
   );
 };
 
