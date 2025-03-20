@@ -50,7 +50,7 @@ export const Events = () => {
   ];
 
   return (
-    <section className="bg-white pb-10">
+    <section className="bg-white pb-10 pt-32">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 pt-7 pb-7">
         <p className="font-circular-web font-bold text-7xl sm:text-8xl md:text-9xl lg:text-10xl xl:text-11xl text-black tracking-tight">EVENTS</p>
