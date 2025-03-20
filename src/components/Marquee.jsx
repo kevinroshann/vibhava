@@ -22,7 +22,7 @@ const Marquee = () => {
   ];
 
   return (
-    <div className="marquee fadeout-horizontal" style={{ "--num-items": items.length }}>
+    <div className="marquee fadeout-horizontal bg-white" style={{ "--num-items": items.length }}>
       <div className="marquee-track">
         {items.map((item, index) => (
           <div key={index} className="marquee-item" style={{ "--item-position": index + 1 }}>

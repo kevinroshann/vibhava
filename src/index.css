@@ -283,8 +283,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-width: 250px; /* Minimum width */
-  min-height: 250px; /* Minimum height */
-  padding: 20px;
+  min-height: 180px; /* Smaller height for mobile */
+  padding: 6px; /* Less padding for a compact look */
   border-radius: 12px; /* Curved edges */
   color: #fff;
   position: relative;
@@ -292,38 +292,54 @@ body {
 }
 
 .card-title {
-  font-size: 2.3rem;
+  font-size: 1.5rem; /* Smaller font on mobile */
   font-weight: bold;
   color: white;
 }
 
 .card-description {
-  font-size: 1rem;
+  font-size: 0.875rem; /* Smaller description text */
   color: black;
 }
 
-.card-container .card-description {
-  font-size: 0.875rem;
-  /* color: rgba(255, 255, 255, 0.8); */
-}
-
-@media (max-width: 768px) {
-  .card-container {
-    width: 100%;
-    min-height: 150px; 
+/* Responsive adjustments */
+@media (min-width: 640px) { /* Tablets and above */
+  .card {
+    min-height: 220px;
+    padding: 20px;
   }
 
-  .grid {
-    grid-template-columns: 1fr; /* Stacks cards on mobile */
+  .card-title {
+    font-size: 1.75rem;
+  }
+
+  .card-description {
+    font-size: 1rem;
   }
 }
+
+@media (min-width: 1024px) { /* Larger screens */
+  .card {
+    min-height: 250px;
+    padding: 24px;
+  }
+
+  .card-title {
+    font-size: 2rem;
+  }
+
+  .card-description {
+    font-size: 1.125rem;
+  }
+}
+
 .marquee {
   margin-left: 10vw;
   margin-right: 10vw;
   max-width: 1800px;
   overflow: hidden;
   --speed: 25s;
-  --item-width: 300px;
+  --item-width: 150px;
   --item-gap: 25px;
   --single-slide-speed: calc(var(--speed) / var(--num-items));
   --item-width-plus-gap: calc(var(--item-width) + var(--item-gap));
@@ -354,7 +370,7 @@ body {
 
 .marquee-item svg {
   height: auto;
-  width: 60%;
+  width: 40%;
 }
 
 @keyframes marquee-move {
@@ -368,7 +384,7 @@ body {
   .marquee {
     margin-left: 5vw;
     margin-right: 5vw;
-    --item-width: 150px;  /* Decrease the item width for smaller screens */
+    --item-width: 75px;  /* Decrease the item width for smaller screens */
     --item-gap: 10px;     /* Reduce the gap between items */
     --speed: 15s;         /* Optionally, speed up the animation for smaller screens */
   }
